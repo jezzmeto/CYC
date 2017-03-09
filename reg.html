@@ -12,8 +12,10 @@
 	  <input name="entry.1339495092" type="text" id="username"  placeholder="請輸入姓名" autofocus required>
 	</p>
 	<p>
-	  <label for="what"> 手機 </label>
-	  <input name="entry.795504394" type="tel"  id= "partNumber" pattern="[0-9]{10}" maxlength="10" autofocus required/>
+	  <label for="tele">手機</label><br>
+   <input name="entry.795504394" type="text" required id="tele" 
+          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          placeholder="請輸入手機號碼" maxlength="10"><br>
 	</p>
 	
 	<p>
@@ -39,9 +41,6 @@
 		<form role="form" novalidate>
 		<label for="inpEmail">Email</label>
 		<input name="entry.560282373" type="email" id="inpEmail" placeholder="Enter email" autofocus required>
-		
-		
-	
 	<p>
 	  <label for="what"> 生日 </label>
 	  <!--<input type="date" id= "inpbd" value="mm/dd/yyyy" max="03-10-2017">-->
